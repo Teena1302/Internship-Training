@@ -1,0 +1,27 @@
+<h1><b><u>Addition and Percentage of marks obtained by student in exam</u></b></h1>
+English: <input id=t1 /> <br>
+Chemistry: <input id=t2 /> <br>
+Information technology: <input id=t3 /> <br>
+Mathematics: <input id=t4 /> <br>
+Physics: <input id=t5 /> <br>
+<input type=button value=Add onclick="add()" /> <br>
+<input type=button value=Percentage onclick="ptg()" /> <br>
+<output id=out1 />
+<script>
+function add()
+{
+a=parseInt(t1.value);
+b=parseInt(t2.value);
+c=parseInt(t3.value);
+d=parseInt(t4.value);
+e=parseInt(t5.value);
+f=a+b+c+d+e;
+out1.value='Total Marks:' + f
+}
+
+function ptg()
+{
+g=(f/500)*100;
+out1.value='Percentage:' + g +'%'
+}
+</script>
