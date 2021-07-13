@@ -1,0 +1,51 @@
+<style>
+.screen { height:60px;width:390px; font-size:60;color:blue;text-align:right}
+.btn { height:60px;width:70px; font-size:30;color:blue;text-align:centre}
+</style>
+<html>
+<center>
+<font color=green size=7><u><b>CALCULATOR</b></u></font>
+<br><br><br>
+<table> 
+<table border="1" >
+<tr > <td colspan=4> <input id="a1" class=screen></tr>
+<tr> <td colspan=4> <input id="a2" class=screen></tr>
+<tr>
+<td><input type=button value= Addition onclick="add()"/></td>
+<td><input type=button value=Subtraction onclick="sub()"/></td>
+<td><input type=button value=Multiplicaton onclick="mul()"/ ></td>
+<td><input type=button value=Division onclick="div()"/></td></tr>
+</table>
+<br><br><br>
+<output id=out1>
+</html>
+<script>
+function add()
+{
+a=parseInt(a1.value);
+b=parseInt(a2.value);
+c=a+b
+out1.value= "ADDITION OF TYPED TWO NUMBERS IS :"  + c;
+}
+function sub()
+{
+a=parseInt(a1.value);
+b=parseInt(a2.value);
+c=a-b
+out1.value= "SUBTRACTION OF TYPED TWO NUMBERS IS :"  +c;
+}
+function mul()
+{
+a=parseInt(a1.value);
+b=parseInt(a2.value);
+c=a*b
+out1.value= "MULTIPLICATION OF TYPED TWO NUMBERS IS :"  + c;
+}
+function div()
+{
+a=parseInt(a1.value);
+b=parseInt(a2.value);
+c=a/b
+out1.value= "DIVISION OF TYPED TWO NUMBERS IS :"  + c;
+}
+</script>
