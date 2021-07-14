@@ -1,0 +1,30 @@
+<style>
+.screen { height : 60px ; width : 250px ; font-size : 20 ; color : voilet ; text-align : right }
+.btn {  height : 60px ; width : 250px ; font-size : 20 ; color : voilet ; text-align : right }
+</style>
+<html>
+<center>
+<font color = brown size = 7><b><u>Find Greatest of Three Numbers</u></b></font>
+<br><br><br>
+<table>
+<table border = "0">
+<tr><td><font color = navy blue size = 4.5>Enter 1st Number : </font><input id = t1 class = screen></td></tr><br>
+<tr><td><font color = navy blue size = 4.5>Enter 2nd Number : </font><input id = t2 class = screen></td></tr><br>
+<tr><td><font color = navy blue size = 4.5>Enter 3rd Number : </font><input id = t3 class = screen></td></tr><br>
+</table>
+<br><br><br>
+<input type = "button" value = "CLICK TO KNOW THE GREATEST NUMBER" onclick = "show()" / ><br><br><br>
+<output id = out1>
+</html>
+<script>
+function show()  
+{
+   a=parseInt(t1.value);
+   b=parseInt(t2.value);
+   c=parseInt(t3.value);
+   if(a>b && a>c) t=a;
+   else if(b>a && b>c ) t=b;
+   else t=c;
+   out1.value=" "  +t
+}
+</script>
